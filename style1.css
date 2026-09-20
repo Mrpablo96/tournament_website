@@ -1,0 +1,262 @@
+body{
+    margin:0px;
+    font-family:dubai;
+    background-image:url(Untitled3_20260607210610.png);
+    background-position:center;
+    background-repeat: none;
+    background-size:cover;
+}
+
+header{
+    height:125px;
+}
+
+.navigation_bar{
+    width:100%;
+    height:100%;
+    background-color:black;
+    display:flex;
+    align-items: center;
+    overflow: hidden;
+
+
+
+}
+.navigation_bar a{
+    margin-top:20px;
+    color:white;
+    font-weight: bold;
+    text-decoration:none;
+    padding:15px;
+    font-size:30px;
+    display:flex;
+    transition: all 0.15s ease;
+    
+}
+#pablo{
+    width:150px;
+    height:150px;
+    position: relative;
+}
+.navigation_bar a:hover{
+    background-color:rgba(167, 226, 255, 0.584);
+    border-radius:10px;
+    transform:scale(1.06);
+}
+
+main{
+    width:auto;
+    margin-top:115px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.welcome{
+    border-radius:10px;
+    padding:30px;
+    width:400px;
+
+    text-align:cenetr;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    color:white;
+    background-color:rgba(0, 0, 0, 0.425);
+    flex-direction: column;
+}
+.info_button{
+    flex-direction: row;
+}
+
+/* The buttons are inside links; keep the link decoration from appearing on small screens. */
+.info_button a,
+.info_button a:visited,
+.info_button a:hover,
+.info_button a:active {
+    text-decoration: none;
+}
+
+.info_button button {
+    text-decoration: none;
+}
+
+#info_button1{
+    transition: all 0.15s ease;
+    margin-bottom: 10px;;
+    background-color:rgb(73, 169, 185);
+    color:white;
+    font-weight: bold;
+    border-radius:10px;
+    padding:10px;
+    border:1px solid rgb(73, 169, 185);
+    font-size:20px;
+}
+
+#info_button2{
+    transition: all 0.15s ease;
+
+    background-color:rgb(73, 169, 185);
+    color:white;
+    font-weight: bold;
+    border-radius:10px;
+    padding:10px;
+    border:1px solid rgb(73, 169, 185);
+    font-size:20px;
+}
+
+#info_button3{
+    transition: all 0.15s ease;
+
+    background-color:rgb(73, 169, 185);
+    color:white;
+    font-weight: bold;
+    border-radius:10px;
+    padding:10px;
+    border:1px solid rgb(73, 169, 185);
+    font-size:20px;
+}
+
+#info_button4{
+    transition: all 0.15s ease;
+    background-color:rgb(73, 169, 185);
+    color:white;
+    font-weight: bold;
+    border-radius:10px;
+    padding:10px;
+    border:1px solid rgb(73, 169, 185);
+    font-size:20px;
+}
+
+
+#info_button1:hover{
+    border-color:rgb(58, 123, 134);
+    background-color: rgb(58, 123, 134);
+    transform: scale(1.03);
+
+}
+
+#info_button2:hover{
+    border-color:rgb(58, 123, 134);
+    background-color: rgb(58, 123, 134);
+    transform: scale(1.03);
+
+}
+
+#info_button3:hover{
+    border-color:rgb(58, 123, 134);
+    background-color: rgb(58, 123, 134);
+    transform: scale(1.03);
+
+}
+
+#info_button4:hover{
+    border-color:rgb(58, 123, 134);
+    background-color: rgb(58, 123, 134);
+    transform: scale(1.03);
+
+}
+
+footer{
+    background-color:black;
+    width:100vw;
+    height:auto;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+footer img{
+    width:200px;
+    height:200px;
+}
+#stopwatch{
+    width:170px;
+    height:170px;
+
+}
+
+/* Phone and small-tablet layout */
+@media (max-width: 700px) {
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .navigation_bar {
+        min-height: 76px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 8px;
+        overflow: visible;
+    }
+
+    #pablo {
+        width: 58px;
+        height: 58px;
+        flex: 0 0 auto;
+    }
+
+    .navigation_bar a {
+        margin-top: 0;
+        padding: 9px 7px;
+        font-size: clamp(14px, 4vw, 18px);
+        text-align: center;
+    }
+
+    main {
+        margin-top: 32px;
+        padding: 0 16px;
+    }
+
+    .welcome {
+        width: 100%;
+        max-width: 480px;
+        padding: 22px 18px;
+    }
+
+    .welcome h2 {
+        text-align: center;
+        font-size: 1.35rem;
+    }
+
+    .welcome p {
+        font-size: 1rem;
+        line-height: 1.65;
+    }
+
+    .info_button {
+        width: 100%;
+    }
+
+    .info_button a,
+    .info_button button {
+        display: block;
+        width: 100%;
+    }
+
+    #info_button1, #info_button2, #info_button3, #info_button4 {
+        font-size: 1rem;
+        padding: 12px;
+        margin: 6px 0;
+    }
+
+    footer {
+        width: 100%;
+        margin-top: 64px;
+        padding: 18px;
+        flex-direction: column;
+    }
+
+    footer img, #stopwatch {
+        width: 110px;
+        height: 110px;
+    }
+}
+
+
