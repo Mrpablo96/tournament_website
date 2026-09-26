@@ -257,6 +257,23 @@ footer img{
         width: 110px;
         height: 110px;
     }
+
+    /* Keep short league pages filling the phone screen so the footer reaches
+       the bottom instead of leaving a blank strip beneath it. */
+    body.league-page {
+        min-height: 100vh;
+        min-height: 100dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    body.league-page main {
+        flex: 1 0 auto;
+    }
+
+    body.league-page footer {
+        margin-top: auto;
+    }
 }
 
 
