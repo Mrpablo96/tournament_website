@@ -66,8 +66,20 @@ main{
     flex-direction: column;
 }
 .info_button{
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
 }
+
+.info_button br {
+    display: none;
+}
+
+.info_button a {
+    display: block;
+}
+
 
 /* The buttons are inside links; keep the link decoration from appearing on small screens. */
 .info_button a,
